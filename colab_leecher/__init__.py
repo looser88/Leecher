@@ -3,16 +3,16 @@
 import logging, json
 from uvloop import install
 from pyrogram.client import Client
-
+from main import API_ID, API_HASH, BOT_TOKEN, USER_ID, DUMP_ID
 # Read the dictionary from the txt file
-with open("/content/Telegram-Leecher/credentials.json", "r") as file:
-    credentials = json.loads(file.read())
+# with open("/content/Telegram-Leecher/credentials.json", "r") as file:
+    # credentials = json.loads(file.read())
 
-API_ID = credentials["API_ID"]
-API_HASH = credentials["API_HASH"]
-BOT_TOKEN = credentials["BOT_TOKEN"]
-OWNER = credentials["USER_ID"]
-DUMP_ID = credentials["DUMP_ID"]
+API_ID = API_ID
+API_HASH = API_HASH
+BOT_TOKEN = BOT_TOKEN
+OWNER = USER_ID
+DUMP_ID = DUMP_ID
 
 
 logging.basicConfig(level=logging.INFO)
